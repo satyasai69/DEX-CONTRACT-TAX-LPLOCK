@@ -1,0 +1,61 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/Router/Library.sol": "Library"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/Router/IFactory.sol": {
+			"keccak256": "0x9ddae33a07f628ca2e6b279255e640a200c6ace0716c8eb79f10c0a34a39c4f1",
+			"urls": [
+				"bzz-raw://3440c232a04508f0cdcedd187f399ce8db441659a7d66e5b98867f2114f866be",
+				"dweb:/ipfs/QmQz62Sf5R3BqfjTgtkBoytBkt3omj7XmjpsyKbnjrYvX6"
+			]
+		},
+		"src/Router/IPair.sol": {
+			"keccak256": "0xdb92972f4ad91928bf2b838c35717718651f0501be334e6f30849c56fe99ff66",
+			"urls": [
+				"bzz-raw://e481899dee463be19aa61191acfef749034329127d372116ad504bad936f14e0",
+				"dweb:/ipfs/QmeFYDk2NDiNjZt1yUDo8u1CuxYVdswc2mqWETaCzD1Cnv"
+			]
+		},
+		"src/Router/Library.sol": {
+			"keccak256": "0x0dfb988cdc7edb154e0fdd85be2690f88c1a3bc552a1171f48a7e97d07a4ed65",
+			"urls": [
+				"bzz-raw://780cf6695286ad9fcd56217eb69e9b5d5a2a6985a70397ce4dc344e42cdc20d4",
+				"dweb:/ipfs/QmdxVf2aKobBfvfCEMLmDoGMiG49BhcVTFVRX2T4NkyLS9"
+			]
+		},
+		"src/Router/SafeMath.sol": {
+			"keccak256": "0xd0cc5ede4252f34f9adf75af689fb003aa6349f229b9bba72db43cba9bb1c9d9",
+			"urls": [
+				"bzz-raw://a2cb594533aebe5028b93c5c429b23907a4830964d8c6728565992bee4cf1eef",
+				"dweb:/ipfs/QmdSBCeJiqjQeGZ2K79DXaDfaqJMtXCWAyXDWJ3KNDWZKM"
+			]
+		}
+	},
+	"version": 1
+}

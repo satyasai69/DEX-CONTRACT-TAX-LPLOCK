@@ -1,0 +1,126 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdraw",
+				"type": "event"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/TaxResiver.sol": "TaxResiver"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/IERC20.sol": {
+			"keccak256": "0xa45dab2f2a6e81dff31d7f62a0b0513ae09f7f01ee22d0970e2b532e2b14fad8",
+			"urls": [
+				"bzz-raw://5b5177e85ae0239a5d633ca2d83652b0fc63622f0bc317a3d32a3661f50d7537",
+				"dweb:/ipfs/QmdV9Jp5icxxC3SYVVuwQTKXMcWicDToahxUxdkFCJC4M9"
+			]
+		},
+		"src/TaxResiver.sol": {
+			"keccak256": "0x8a7bc640f5e1fc0a4b8c8076869623b6853cb2c023de045c6358b8e3adaf9ff1",
+			"urls": [
+				"bzz-raw://b7b27bd6f488d817cc9580e9d3ecb4626117e578bdd104e33099e43d34cba768",
+				"dweb:/ipfs/QmNfTNpdbmWuTrxZqFPqpcvMxs727Zh4TH3yEqeniryvXb"
+			]
+		}
+	},
+	"version": 1
+}
