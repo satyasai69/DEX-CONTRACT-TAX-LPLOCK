@@ -29,6 +29,14 @@ contract Factory is IFactory {
         taxfee = _taxfee;
         owner = msg.sender;
     }
+     
+
+     // update tax fee depolyed pairs
+    function updatePairTaxFee(address pairAddress, uint newTaxFee) external onlyOwner {
+    require(pairAddress != address(0), "Invalid pair address");
+    Pair(pairAddress).taxfeeupdate(newTaxFee); 
+    }
+
 
     // Modifier to restrict function calls to the owner
     modifier onlyOwner() {

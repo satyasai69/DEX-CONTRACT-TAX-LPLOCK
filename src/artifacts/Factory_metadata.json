@@ -260,6 +260,26 @@
 				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "pairAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newTaxFee",
+						"type": "uint256"
+					}
+				],
+				"name": "updatePairTaxFee",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -290,10 +310,10 @@
 			]
 		},
 		"src/Factory.sol": {
-			"keccak256": "0x3f577d73721f65778fc54c26e4e404d6238ed92631c560ff96581c404cb0f0aa",
+			"keccak256": "0xeedbdfddcf6f0ed49c7799bddd323b49a2c3b179e0679f4bd9d6b30cfc23569b",
 			"urls": [
-				"bzz-raw://73d1233f83a25577825c83bd8283ff215ed5c033a28630cb1fdcdf5c839571cf",
-				"dweb:/ipfs/QmYwbndQ5u71HGqBph1j6DNH9tR5zXwcq92axKsq3pjkC1"
+				"bzz-raw://d8751015caaf8bc18e602ad69ab0df392f1c72933a29cfb925fb0a488fe6fb7f",
+				"dweb:/ipfs/QmdU7UfB4azDxvviAWeXZaAFmezaKpHi4WNfUK9ohiBrH3"
 			]
 		},
 		"src/ICallee.sol": {
@@ -332,10 +352,10 @@
 			]
 		},
 		"src/Pair.sol": {
-			"keccak256": "0x872cc37bc20311cdeac2cdb245a31a6829c55a52347ec7d901f0230a8b11f3f0",
+			"keccak256": "0x5ad7ea0e9c4a7e59439197ca8ebd26fdcb07d1743e1c6a7ef482f237177a6545",
 			"urls": [
-				"bzz-raw://97a769abaefe21dea0ac70f228ad24cfa40490ac2806370df5d39a82fc1487e5",
-				"dweb:/ipfs/QmRr3NwSbZLVABcguHuwV5PNZZb4eC8i75XLmN3xzRYgDJ"
+				"bzz-raw://89986b7afbd5c6adef6f5dcb863011650a94f1ad6a624f99875894853c67a3ae",
+				"dweb:/ipfs/QmYkvEd4TbKPtBC5Pnj3S9vgtiiM73aDXpSdEBfoZ7n1Wc"
 			]
 		},
 		"src/SafeMath.sol": {

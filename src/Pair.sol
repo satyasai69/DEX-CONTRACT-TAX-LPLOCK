@@ -31,7 +31,7 @@ contract Pair is IPair, ERC20 {
     uint public price0CumulativeLast;
     uint public price1CumulativeLast;
     uint public kLast; // reserve0 * reserve1, as of immediately after the most recent liquidity event
-
+     address public owner;
     uint private unlocked = 1;
     modifier lock() {
         require(unlocked == 1, "Pancake: LOCKED");
@@ -39,6 +39,16 @@ contract Pair is IPair, ERC20 {
         _;
         unlocked = 1;
     }
+
+    // Modifier to restrict function calls to the owner
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only owner can call this function");
+        _;
+    }
+
+    function taxfeeupdate(uint _newtax) public onlyOwner {
+        taxfee = _newtax; // Update the tax fee variable
+    }  
 
     function getReserves()
         public
@@ -83,6 +93,7 @@ contract Pair is IPair, ERC20 {
 
     constructor() public {
         factory = msg.sender;
+         owner = msg.sender;
     }
 
     // called once by the factory at time of deployment
@@ -322,8 +333,8 @@ contract Pair is IPair, ERC20 {
         uint balance0;
         uint balance1;
         {
-            uint taxamount0Out = amount0Out - (amount0Out * 5) / 100;
-            uint taxamount1Out = amount1Out - (amount1Out * 5) / 100;
+            uint taxamount0Out = amount0Out - (amount0Out * taxfee) / 100;
+            uint taxamount1Out = amount1Out - (amount1Out * taxfee) / 100;
 
             // scope for _token{0,1}, avoids stack too deep errors
             address _token0 = token0;
@@ -339,8 +350,8 @@ contract Pair is IPair, ERC20 {
                     data
                 );
 
-            uint tax0 = (amount0Out * 5) / 100;
-            uint tax1 = (amount1Out * 5) / 100;
+            uint tax0 = (amount0Out * taxfee) / 100;
+            uint tax1 = (amount1Out * taxfee) / 100;
 
             if (amount0Out > 0) _safeTransfer(_token0, FeeResiver, tax0); // optimistically transfer tokens
             if (amount1Out > 0) _safeTransfer(_token1, FeeResiver, tax1); // optimistically transfer tokens

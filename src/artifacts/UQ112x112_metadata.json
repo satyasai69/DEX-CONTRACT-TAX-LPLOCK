@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/UQ112x112.sol": "UQ112x112"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/UQ112x112.sol": {
+			"keccak256": "0x6e2290410379a33e837cbc6ff96ff5d983345daf2d824705b6f4b4c22ebc36a9",
+			"urls": [
+				"bzz-raw://d3dc93ec9e4b2d9da2f664930040f7b88c6364d40289ddfa911a4403ea05e783",
+				"dweb:/ipfs/QmXcS8kvWMEBQbdu9JodRhY1yjomGG13KZpcAivd5x2NDH"
+			]
+		}
+	},
+	"version": 1
+}

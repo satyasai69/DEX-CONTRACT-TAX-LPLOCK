@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.6.6+commit.6c089d02"
+		"version": "0.5.16+commit.9c3226ce"
 	},
 	"language": "Solidity",
 	"output": {
@@ -18,9 +18,6 @@
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
-		"metadata": {
-			"bytecodeHash": "ipfs"
-		},
 		"optimizer": {
 			"enabled": true,
 			"runs": 200
@@ -43,10 +40,10 @@
 			]
 		},
 		"src/Router/Library.sol": {
-			"keccak256": "0x0dfb988cdc7edb154e0fdd85be2690f88c1a3bc552a1171f48a7e97d07a4ed65",
+			"keccak256": "0x7324d965e888c72080dc45534eb315c79827f910d17a1b87640db53fa1f3dbde",
 			"urls": [
-				"bzz-raw://780cf6695286ad9fcd56217eb69e9b5d5a2a6985a70397ce4dc344e42cdc20d4",
-				"dweb:/ipfs/QmdxVf2aKobBfvfCEMLmDoGMiG49BhcVTFVRX2T4NkyLS9"
+				"bzz-raw://28cdf0bf7f0393f7cfd177bc0bbff97e7d6cd5cb10e127270c733939e042e4e4",
+				"dweb:/ipfs/QmUPEwHL3zVAMhs72vSy4m6Lqb8zuLbpLnx7ArgAyWKMxr"
 			]
 		},
 		"src/Router/SafeMath.sol": {
